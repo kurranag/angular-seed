@@ -7,7 +7,7 @@ echo "Updating WebDriver"
 echo $BASE_DIR
 echo "-------------------------------------------------------------------"
 
-$BASE_DIR/../node_modules/protractor/bin/webdriver-manager update
+echo $BASE_DIR/../node_modules/protractor/bin/webdriver-manager update
 
 
 echo ""
