@@ -1,5 +1,22 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<style>
+ table,th,td
+ {
+ border:1px solid black;
+ }
+ </style>
+<body ng-init="car">
+ <table style="width:300px">
+  <tr align="center">
+  <td>Make</td>
+  <td>Model</td> 
+  <td>Year</td>
+  <td>Price</td>
+ </tr>
+   <tr ng-repeat="cars in car">
+      <td>{{cars.make}}</td>
+      <td>{{cars.model}}</td>
+      <td>{{cars.year}}</td>
+      <td>{{cars.price | currency}}</td>
+   </tr>   
+ </table>
+</body>
